@@ -1,27 +1,18 @@
 <template>
   <b-container>
-    <b-card-group deck>
-               <b-card bg-variant="light" header="Pedreiro" class="text-bold">
-                  <p class="card-text">
-                    Daniel Bankow<br>
-                    (55) 99628-2535<br>
-                    Agudo-RS</p>
-              </b-card>
-       </b-card-group>  
-   
-  <div class="hello">
-    <div class="jumbotron">
-    
-      <select v-model="profissao">
+    <select v-model="profissao">
         <option :value="item" v-for="item in items">{{item}}</option>
-
       </select>
       <button @click="filtrar">Filtrar</button>
-      {{profissao}}</br>
-      {{resultado}}
-    </div>
-  </div>
-  
+    <b-card-group deck v-for="profissional in resultado">
+               <b-card bg-variant="light" :header="profissional.profissao" class="text-bold">
+                  <p class="card-text">
+                    {{profissional.nome}}<br>
+                    {{profissional.fone}}<br>
+                    {{profissional.local}}</p>
+              </b-card>
+       </b-card-group>  
+   </b-container>
 </template>
 
 <script>
