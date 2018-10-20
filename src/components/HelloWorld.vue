@@ -1,11 +1,14 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>dando inicio os trabalhos</h2>
-    <div class="jumbotron">
-        <h3>qualquer coisa</h3>
-    </div>
-  </div>
+  <b-container>
+    <b-card-group deck>
+               <b-card bg-variant="light" header="Pedreiro" class="text-bold">
+                  <p class="card-text">
+                    Daniel Bankow<br>
+                    (55) 99628-2535<br>
+                    Agudo-RS</p>
+              </b-card>
+       </b-card-group>  
+    </b-container>
 </template>
 
 <script>
@@ -17,7 +20,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
