@@ -98,6 +98,7 @@
     },
     methods:{
       filtrar() {
+        this.resultado = [];
         this.dados.map((dado) => {
           if (dado.profissao == this.profissao){
             this.resultado.push(dado)
