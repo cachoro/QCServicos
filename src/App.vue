@@ -1,21 +1,25 @@
-
 <template>
-   <div>
-    <div>
-        <img class="imglogo" alt="Vue logo" src="./assets/logo_qc.png" style="">
-    </div>
-    <br>
-    <hello-world />
+  <div>
+    <logo />
+    <br />
+    <listar />
+    <br />
+    <rodape />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import logo from "./components/logo.vue";
+import listar from "./components/listar.vue";
+import rodape from "./components/rodape.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    listar,
+    logo,
+    rodape
+
   }
 };
 </script>
@@ -23,4 +27,3 @@ export default {
 <style lang="scss">
 @import "./assets/scss/app.scss";
 </style>
-

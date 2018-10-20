@@ -21,7 +21,7 @@
       {{resultado}}
     </div>
   </div>
-   </b-container>
+  
 </template>
 
 <script>
