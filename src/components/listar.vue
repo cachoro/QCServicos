@@ -1,7 +1,7 @@
 <template>
   <b-container>
-    <select v-model="profissao">
-        <option :value="item" v-for="item in items">{{item}}</option>
+    <select v-model="cidade">
+        <option :value="item" v-for="item in cidades">{{item}}</option>
       </select>
       <br />
       <b-alert variant="danger" :show="resultado.length==0" >Resultado Não Encontrado</b-alert>
@@ -30,6 +30,7 @@ import dados from './dados/dados.js'
     data: function(){
       return{
         resultado:[],
+        cidade:null,
         items: [
           'Costureira',
           'Pedreiro',
@@ -38,6 +39,14 @@ import dados from './dados/dados.js'
           'Eletricista',
           'Pintor',
           'Jardineiro',
+        ],
+        cidades:[
+          'Agudo',
+          'Restinga Sêca',
+          'Santa Maria',
+          'São João do Polesine',
+          'Silveira Martins',
+          'Faxinal do Sorturno',
         ],
         dados: dados,
           
@@ -49,13 +58,16 @@ import dados from './dados/dados.js'
           this.filtrar();
           this.$router.push({path:`/${this.profissao}`});
         }
+      },
+      cidade() {
+        this.filtrar();
       }
     },
     methods:{
       filtrar() {
         this.resultado = [];
         this.dados.map((dado) => {
-          if (dado.profissao == this.profissao){
+          if (dado.profissao == this.profissao && (this.cidade.length > 0 && dado.local == this.cidade)){
             this.resultado.push(dado)
           }
         })
