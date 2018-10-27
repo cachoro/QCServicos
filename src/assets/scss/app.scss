@@ -13,3 +13,16 @@
 .center{
     text-align: center;
 }
+
+.textoimg {
+    z-index: 1;
+    position: absolute;
+    top: 40% !important;
+    left: 25% !important;
+    font-weight: bold;
+    text-shadow: 2px 2px #000;
+    color: white;
+}
+.espaco{
+    margin-top: 2.2%;
+}
