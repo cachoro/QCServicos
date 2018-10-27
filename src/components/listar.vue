@@ -47,6 +47,7 @@ import dados from './dados/dados.js'
       profissao() {
         if (this.profissao){
           this.filtrar();
+          this.$router.push({path:`/${this.profissao}`});
         }
       }
     },
