@@ -4,7 +4,7 @@
     <br />
    <div class="container text-right" >
        <router-link to="/">
-       <img src="../assets/Home-Icon.png" style="max-height:32px" >
+       <img src="../assets/Home-Icon.png" style="max-height:32px">
        </router-link>
    </div>
     <listar :profissao="propProfissao" />
@@ -12,7 +12,6 @@
     <rodape />
   </div>
 </template>
-
 <script>
 import logo from "./logo.vue";
 import listar from "./listar.vue";

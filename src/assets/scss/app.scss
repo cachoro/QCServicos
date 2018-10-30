@@ -4,14 +4,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 0px;
     height: 50px;
-}
-.negrito{
-    font-weight:bold;
 }
 .center{
     text-align: center;
+    background: orange;
 }
 
 .textoimg {
@@ -20,9 +18,28 @@
     top: 40% !important;
     left: 25% !important;
     font-weight: bold;
-    text-shadow: 2px 2px #000;
-    color: white;
+    text-shadow: 3px 3px #000;
+    color: lightgray;
 }
 .espaco{
     margin-top: 2.2%;
+}
+.bg{
+    background-color: #d3d3d3;
+}
+.card-header{
+    background-color : #5171FE;
+    font-weight:bold;
+    color:#f2f2f2;
+}
+.card-body{
+    background-color : #f2f2f2;
+    font-weight:600 !important;
+}
+.btn-secondary{
+    background-color : #5171FE;
+}
+.negritob{
+    font-weight: bold;
+    color: #f2f2f2;
 }
