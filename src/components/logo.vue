@@ -1,8 +1,13 @@
 <template>
   
-    <div>
-        <img class="imglogo" alt="Vue logo" src="../assets/logo_qc.png" style="">
-    </div>
+<div>
+  <nav class="navbar navbar-dark bg-dark">
+     <img src="../assets/logo_qc.png" class="imglogo" height="75px" width="150px">
+     <router-link to='/'>
+       <img src="../assets/Home-Icon.png" style="max-height:32px" >
+     </router-link> 
+  </nav>
+</div>
     
 </template>
 

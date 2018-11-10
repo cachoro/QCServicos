@@ -1,12 +1,7 @@
 <template>
-  <div>
+  <div style="height:100%">
     <logo />
     <br />
-   <div class="container text-right" >
-       <router-link to="/">
-       <img src="../assets/Home-Icon.png" style="max-height:32px" >
-       </router-link>
-   </div>
     <listar :profissao="propProfissao" />
     <br />
     <rodape />

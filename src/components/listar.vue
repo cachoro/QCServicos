@@ -1,10 +1,12 @@
 <template>
-  <b-container>
+  <b-container class="aligner-item-2pagina">
     <select v-model="cidade">
         <option :value="item" v-for="item in cidades">{{item}}</option>
       </select>
       <br />
-      <b-alert variant="danger" :show="resultado.length==0" >Resultado Não Encontrado</b-alert>
+      <center>
+         <b-alert class="col-md-5 text-center" variant="danger" :show="resultado.length==0" >Resultado Não Encontrado</b-alert>
+      </center>    
     <b-card-group deck v-for="profissional in resultado">
                <b-card bg-variant="light" :header="profissional.profissao" class="text-bold">
                   <p class="card-text">

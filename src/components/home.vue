@@ -1,10 +1,8 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
-        <img src="../assets/logo_qc.png" class="imglogo" height="75px" width="150px">
-</nav>
+    <logo />
 <div class="container">
-    <div class="row">
+    <div class="row aligner-item">
         <div class="col-md-4">
             <router-link to="/Pedreiro">
               <img src="https://uploads.metropoles.com/wp-content/uploads/2018/04/10113058/WhatsApp-Image-2018-04-10-at-11.28.16-840x560.jpeg" class="img-fluid img-thumbnail border" id="borda" height="350px" width="400px">
@@ -48,10 +46,13 @@
 </template>
 
 <script>
-
+import Logo from './logo';
 
 export default {
   name: "Home",
+  components:{
+      Logo
+  }
 };
 </script>
 

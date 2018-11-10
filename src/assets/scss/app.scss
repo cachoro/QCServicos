@@ -1,4 +1,14 @@
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
+body{
+    background:url(https://lh3.googleusercontent.com/w5jPDT9ETEwNoORZ7D2b8TLBy6MwOJ0P5umRMT58s2QJ5fKnfHjoIm_BZRnkHuLP9gE=w2247-h1264);
+    height: 100vh;
+}
+.aligner-item {
+    margin-top: 12%;
+  }
+  .aligner-item-2pagina {
+    margin-top: 15%;
+  }
 .imglogo{
     text-align: center;
     display: block;
@@ -25,4 +35,8 @@
 }
 .espaco{
     margin-top: 2.2%;
+}
+.rodape{
+    bottom:0.5%;
+    position: absolute; 
 }
