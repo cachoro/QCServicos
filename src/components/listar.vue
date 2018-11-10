@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <b-container class="aligner-item-2pagina">
     <select v-model="cidade">
         <option :value="item" v-for="item in cidades">{{item}}</option>
@@ -10,9 +11,23 @@
     <b-card-group deck v-for="profissional in resultado">
                <b-card bg-variant="light" :header="profissional.profissao" class="text-bold">
                   <p class="card-text">
+=======
+  <b-container>
+    <form>
+    <b-form-select v-model="cidade" id="municipio">  
+        <option :value="item" v-for="item in cidades">{{item}}</option>
+        <option slot="first" :value="null">Escolha uma cidade</option>
+      </b-form-select>
+      </form>
+      <b-alert variant="danger" :show="resultado.length==0" >Resultado Não Encontrado</b-alert>
+    <b-card-group deck v-for="profissional in resultado" >
+               <b-card :header="profissional.profissao" bg-variant="secondary" class="negrito">
+                    <div class="posição">
+>>>>>>> e688d80e09257ca2a47727c1db72a1b99c8b8c24
                     {{profissional.nome}}<br>
                     {{profissional.fone}}<br>
-                    {{profissional.local}}</p>
+                    {{profissional.local}}
+                    </div>
               </b-card>
        </b-card-group>
   
@@ -51,7 +66,8 @@ import dados from './dados/dados.js'
           'Faxinal do Sorturno',
         ],
         dados: dados,
-          
+       
+       
       }    
     },
     watch: {

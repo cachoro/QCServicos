@@ -7,7 +7,6 @@
     <rodape />
   </div>
 </template>
-
 <script>
 import logo from "./logo.vue";
 import listar from "./listar.vue";

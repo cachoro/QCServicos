@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from './components/home.vue'
 import Profissao from './components/profissao.vue'
 
+
+
 Vue.use(VueRouter);
 
 export default new VueRouter({
