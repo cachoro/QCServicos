@@ -1,5 +1,5 @@
 <template>    
-        <div class="rodape">
+        <div class="anunciohome1">
             <!-- Modal -->         
             <b-btn v-b-modal.modal1 class="center">Quero anunciar</b-btn>
             <b-modal id="modal1" title="Realize seu cadastro!">

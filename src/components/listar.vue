@@ -1,17 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <b-container class="aligner-item-2pagina">
-    <select v-model="cidade">
-        <option :value="item" v-for="item in cidades">{{item}}</option>
-      </select>
-      <br />
-      <center>
-         <b-alert class="col-md-5 text-center" variant="danger" :show="resultado.length==0" >Resultado Não Encontrado</b-alert>
-      </center>    
-    <b-card-group deck v-for="profissional in resultado">
-               <b-card bg-variant="light" :header="profissional.profissao" class="text-bold">
-                  <p class="card-text">
-=======
   <b-container>
     <form>
     <b-form-select v-model="cidade" id="municipio">  
@@ -23,7 +10,6 @@
     <b-card-group deck v-for="profissional in resultado" >
                <b-card :header="profissional.profissao" bg-variant="secondary" class="negrito">
                     <div class="posição">
->>>>>>> e688d80e09257ca2a47727c1db72a1b99c8b8c24
                     {{profissional.nome}}<br>
                     {{profissional.fone}}<br>
                     {{profissional.local}}
